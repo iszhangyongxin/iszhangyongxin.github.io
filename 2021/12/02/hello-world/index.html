@@ -151,6 +151,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                Links
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -258,6 +270,18 @@
                 
                 
               </div>
+              <!--打赏-->
+                <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div class="funText">Have fun</div>
+  <button id = "rewardButton" style = "color: #FFFF; background: #f44336;border-radius:50%" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}"><span>赏</span></button>
+  <div id="QR" style="display: none;">
+    <div id="wechat" style="display: inline-block;">
+    <img id="wechat_qr" src="/img/weixin.jpg" srcset="/img/loading.gif" lazyload alt="Tom's Blog"/><p>Wechat Pay</p><p>感谢您的支持</p>
+  </div>
+  </div>
+
+</div>
+ <!--打赏-->
               
                 <p class="note note-warning">
                   
