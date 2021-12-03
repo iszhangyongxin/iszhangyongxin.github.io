@@ -4,13 +4,57 @@
   
   
   <entry>
-    <title>Tom&#39;s Book Review</title>
-    <link href="/2021/12/02/book-review/"/>
-    <url>/2021/12/02/book-review/</url>
+    <title>Tom&#39;s book review</title>
+    <link href="/2019/12/03/book-review/"/>
+    <url>/2019/12/03/book-review/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="Tom’s-Book-Review"><a href="#Tom’s-Book-Review" class="headerlink" title="Tom’s Book Review"></a>Tom’s Book Review</h1><h2 id="《网络是怎么连接的》"><a href="#《网络是怎么连接的》" class="headerlink" title="《网络是怎么连接的》"></a>《网络是怎么连接的》</h2><h2 id="《基金投资指南》"><a href="#《基金投资指南》" class="headerlink" title="《基金投资指南》"></a>《基金投资指南》</h2>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>Book</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Tom&#39;s paper review</title>
+    <link href="/2019/12/03/paper-review/"/>
+    <url>/2019/12/03/paper-review/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Tom’s-Book-Review"><a href="#Tom’s-Book-Review" class="headerlink" title="Tom’s Book Review"></a>Tom’s Book Review</h1><h2 id="《网络是怎么连接的》"><a href="#《网络是怎么连接的》" class="headerlink" title="《网络是怎么连接的》"></a>《网络是怎么连接的》</h2><h2 id="《基金投资指南》"><a href="#《基金投资指南》" class="headerlink" title="《基金投资指南》"></a>《基金投资指南》</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>paper</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Tom&#39;s video review</title>
+    <link href="/2019/12/03/video-review/"/>
+    <url>/2019/12/03/video-review/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Tom’s-Video-Review"><a href="#Tom’s-Video-Review" class="headerlink" title="Tom’s Video Review"></a>Tom’s Video Review</h1>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>video</tag>
+      
+    </tags>
     
   </entry>
   
