@@ -23,25 +23,6 @@
   
   
   <entry>
-    <title>Tom&#39;s paper review</title>
-    <link href="/2019/12/03/paper-review/"/>
-    <url>/2019/12/03/paper-review/</url>
-    
-    <content type="html"><![CDATA[<h1 id="Tom’s-Paper-Review"><a href="#Tom’s-Paper-Review" class="headerlink" title="Tom’s Paper Review"></a>Tom’s Paper Review</h1><h2 id="style-transfer"><a href="#style-transfer" class="headerlink" title="style transfer"></a>style transfer</h2><h2 id="数据集、用途"><a href="#数据集、用途" class="headerlink" title="数据集、用途"></a>数据集、用途</h2><h2 id="改进点"><a href="#改进点" class="headerlink" title="改进点"></a>改进点</h2><ol><li>多尺度特征融合<br>浅层特征和深层特征相融合<br><a href="https://zhuanlan.zhihu.com/p/74710464">https://zhuanlan.zhihu.com/p/74710464</a></li></ol><ol start="2"><li>残差网络 –&gt; 密集连接网络</li></ol><h2 id="改进点文章收集"><a href="#改进点文章收集" class="headerlink" title="改进点文章收集"></a>改进点文章收集</h2><ol><li><p>inception 和 ResNet 相结合 <a href="https://m.xzbu.com/8/view-15343830.htm">https://m.xzbu.com/8/view-15343830.htm</a></p></li><li></li></ol>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>paper</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Tom&#39;s book review</title>
     <link href="/2019/12/03/book-review/"/>
     <url>/2019/12/03/book-review/</url>
@@ -53,6 +34,25 @@
     <tags>
       
       <tag>Book</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Tom&#39;s paper review</title>
+    <link href="/2019/12/03/paper-review/"/>
+    <url>/2019/12/03/paper-review/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Tom’s-Paper-Review"><a href="#Tom’s-Paper-Review" class="headerlink" title="Tom’s Paper Review"></a>Tom’s Paper Review</h1><h2 id="style-transfer"><a href="#style-transfer" class="headerlink" title="style transfer"></a>style transfer</h2><h2 id="数据集、用途"><a href="#数据集、用途" class="headerlink" title="数据集、用途"></a>数据集、用途</h2><h2 id="改进点"><a href="#改进点" class="headerlink" title="改进点"></a>改进点</h2><ol><li>多尺度特征融合<br>浅层特征和深层特征相融合<br><a href="https://zhuanlan.zhihu.com/p/74710464">https://zhuanlan.zhihu.com/p/74710464</a></li></ol><ol start="2"><li>残差网络 –&gt; 密集连接网络</li></ol><h2 id="改进点文章收集"><a href="#改进点文章收集" class="headerlink" title="改进点文章收集"></a>改进点文章收集</h2><ol><li><p>inception 和 ResNet 相结合 <a href="https://m.xzbu.com/8/view-15343830.htm">https://m.xzbu.com/8/view-15343830.htm</a></p></li><li></li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>paper</tag>
       
     </tags>
     
