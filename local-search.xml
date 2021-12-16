@@ -8,7 +8,7 @@
     <link href="/2021/12/16/Redis/"/>
     <url>/2021/12/16/Redis/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h1><h2 id="一、Redis的分布式锁"><a href="#一、Redis的分布式锁" class="headerlink" title="一、Redis的分布式锁"></a>一、Redis的分布式锁</h2><p>分布式锁是为了实现<code>强一致性</code>，例如</p><p><code>多个用户多个微服务去抢购物车100个限量商品，由于访问的是不同的机器，所以这个100可能是不准确的。</code></p><blockquote><p>有两个线程（分别叫T1,T2）做的都是同样的事情，拿到一个叫做A的资源，然后对其进行+1操作。由于线程之间是不会互相通信的，于是就有可能出现下面这种情况：<br>T1拿到A，读入内存，此时A值为T；<br>T2拿到A，读入内存，此时A值为T；<br>T1进行+1操作，此时A实际值为T+1；<br>T2进行+1操作，此时A的实际值仍然为T+1;</p></blockquote><p><strong>分布式锁应该具备哪些条件？</strong></p><p>在分析分布式锁的三种实现方式之前，先了解一下分布式锁应该具备哪些条件：</p><ol><li>在分布式系统环境下，一个方法在同一时间只能被一个机器的一个线程执行；</li><li>高可用的获取锁与释放锁；</li><li>高性能的获取锁与释放锁；</li><li>具备可重入特性；</li><li>具备锁失效机制，防止死锁；</li><li>具备非阻塞锁特性，即没有获取到锁将直接返回获取锁失败。</li></ol><p><strong>实现分布式锁的三种方式？</strong></p><p>首先讲一下两个指令：<code>SETNX key value</code><br>是SET if Not eXists(如果不存在，则 SET)的简写。<br>如果不存在，setNx 成功返回int的 <code>1</code>， 存在了就返回 <code>0</code>。</p>]]></content>
     
     
     
