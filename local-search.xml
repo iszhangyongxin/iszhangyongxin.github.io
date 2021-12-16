@@ -4,36 +4,30 @@
   
   
   <entry>
-    <title>Tampermonkey</title>
-    <link href="/2019/12/13/Tampermonkey/"/>
-    <url>/2019/12/13/Tampermonkey/</url>
+    <title></title>
+    <link href="/2021/12/16/Redis/"/>
+    <url>/2021/12/16/Redis/</url>
     
-    <content type="html"><![CDATA[<h1 id="Tampermonkey-插件使用"><a href="#Tampermonkey-插件使用" class="headerlink" title="Tampermonkey 插件使用"></a>Tampermonkey 插件使用</h1><p>你是否还在看广告？无论是优酷、芒果TV、爱奇艺，每一集都得看一次广告<del>你是否还在因为没有会员然后看不到很多东西</del></p><p>本次分享一个插件<code>Tampermonkey</code>,就可以帮你解决这个问题~</p><h1 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h1><ol><li><p>选择谷歌浏览器上面<code>...</code>,选择<code>更多工具</code>，选择<code>扩展程序</code><br><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E6%89%A9%E5%B1%95%E7%A8%8B%E5%BA%8F.PNG?raw=true"></p></li><li><p>左上方,选择扩展程序，打开chorme网上商店（需要科学上网）<br><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E7%BD%91%E4%B8%8A%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97.PNG?raw=true"></p></li><li><p>搜索Tampermonkey，<code>点击</code>然后<code>添加到chorme</code><br><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E4%B8%8B%E8%BD%BD.PNG?raw=true"></p></li><li><p>在右上角，找到你刚才添加的插件，点击获取新脚本<br><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E8%8E%B7%E5%8F%96%E6%96%B0%E8%84%9A%E6%9C%AC.PNG?raw=true"></p></li><li><p>搜索视频vip，然后任意安装一个插件<br>   <img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6.PNG?raw=true"></p></li></ol><h1 id="插件使用"><a href="#插件使用" class="headerlink" title="插件使用"></a>插件使用</h1><p>安装完成以后，看一下效果~</p><p><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E4%BD%BF%E7%94%A8.PNG?raw=true"></p><p><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E5%AE%8C%E6%88%90.PNG?raw=true"></p><p>以后看电视就不受vip限制啦~</p>]]></content>
+    <content type="html"><![CDATA[]]></content>
     
     
-    
-    <tags>
-      
-      <tag>chorme</tag>
-      
-    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>Tom&#39;s paper review</title>
-    <link href="/2019/12/03/paper-review/"/>
-    <url>/2019/12/03/paper-review/</url>
+    <title>Tampermonkey</title>
+    <link href="/2019/12/13/Tampermonkey/"/>
+    <url>/2019/12/13/Tampermonkey/</url>
     
-    <content type="html"><![CDATA[<h1 id="Tom’s-Paper-Review"><a href="#Tom’s-Paper-Review" class="headerlink" title="Tom’s Paper Review"></a>Tom’s Paper Review</h1><h2 id="style-transfer"><a href="#style-transfer" class="headerlink" title="style transfer"></a>style transfer</h2><h2 id="数据集、用途"><a href="#数据集、用途" class="headerlink" title="数据集、用途"></a>数据集、用途</h2><h2 id="改进点"><a href="#改进点" class="headerlink" title="改进点"></a>改进点</h2><ol><li>多尺度特征融合<br>浅层特征和深层特征相融合<br><a href="https://zhuanlan.zhihu.com/p/74710464">https://zhuanlan.zhihu.com/p/74710464</a></li></ol><ol start="2"><li>残差网络 –&gt; 密集连接网络</li></ol><h2 id="改进点文章收集"><a href="#改进点文章收集" class="headerlink" title="改进点文章收集"></a>改进点文章收集</h2><ol><li><p>inception 和 ResNet 相结合 <a href="https://m.xzbu.com/8/view-15343830.htm">https://m.xzbu.com/8/view-15343830.htm</a></p></li><li></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="Tampermonkey-插件使用"><a href="#Tampermonkey-插件使用" class="headerlink" title="Tampermonkey 插件使用"></a>Tampermonkey 插件使用</h1><p>你是否还在看广告？无论是优酷、芒果TV、爱奇艺，每一集都得看一次广告<del>你是否还在因为没有会员然后看不到很多东西</del></p><p>本次分享一个插件<code>Tampermonkey</code>,就可以帮你解决这个问题~</p><h1 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h1><ol><li><p>选择谷歌浏览器上面<code>...</code>,选择<code>更多工具</code>，选择<code>扩展程序</code><br><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E6%89%A9%E5%B1%95%E7%A8%8B%E5%BA%8F.PNG?raw=true"></p></li><li><p>左上方,选择扩展程序，打开chorme网上商店（需要科学上网）<br><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E7%BD%91%E4%B8%8A%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97.PNG?raw=true"></p></li><li><p>搜索Tampermonkey，<code>点击</code>然后<code>添加到chorme</code><br><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E4%B8%8B%E8%BD%BD.PNG?raw=true"></p></li><li><p>在右上角，找到你刚才添加的插件，点击获取新脚本<br><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E8%8E%B7%E5%8F%96%E6%96%B0%E8%84%9A%E6%9C%AC.PNG?raw=true"></p></li><li><p>搜索视频vip，然后任意安装一个插件<br>   <img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6.PNG?raw=true"></p></li></ol><h1 id="插件使用"><a href="#插件使用" class="headerlink" title="插件使用"></a>插件使用</h1><p>安装完成以后，看一下效果~</p><p><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E4%BD%BF%E7%94%A8.PNG?raw=true"></p><p><img src="https://github.com/iszhangyongxin/pictures/blob/main/2021-12/%E5%AE%8C%E6%88%90.PNG?raw=true"></p><p>以后看电视就不受vip限制啦~</p><h1 id="知网pdf格式"><a href="#知网pdf格式" class="headerlink" title="知网pdf格式"></a>知网pdf格式</h1><p>在插件中搜索<code>知网pdf</code>，以后看知网的文章就可以直接下载pdf啦!</p>]]></content>
     
     
     
     <tags>
       
-      <tag>paper</tag>
+      <tag>chorme</tag>
       
     </tags>
     
@@ -53,6 +47,25 @@
     <tags>
       
       <tag>Book</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Tom&#39;s paper review</title>
+    <link href="/2019/12/03/paper-review/"/>
+    <url>/2019/12/03/paper-review/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Tom’s-Paper-Review"><a href="#Tom’s-Paper-Review" class="headerlink" title="Tom’s Paper Review"></a>Tom’s Paper Review</h1><h2 id="style-transfer"><a href="#style-transfer" class="headerlink" title="style transfer"></a>style transfer</h2><h2 id="数据集、用途"><a href="#数据集、用途" class="headerlink" title="数据集、用途"></a>数据集、用途</h2><h2 id="改进点"><a href="#改进点" class="headerlink" title="改进点"></a>改进点</h2><ol><li>多尺度特征融合<br>浅层特征和深层特征相融合<br><a href="https://zhuanlan.zhihu.com/p/74710464">https://zhuanlan.zhihu.com/p/74710464</a></li></ol><ol start="2"><li>残差网络 –&gt; 密集连接网络</li></ol><h2 id="改进点文章收集"><a href="#改进点文章收集" class="headerlink" title="改进点文章收集"></a>改进点文章收集</h2><ol><li><p>inception 和 ResNet 相结合 <a href="https://m.xzbu.com/8/view-15343830.htm">https://m.xzbu.com/8/view-15343830.htm</a></p></li><li></li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>paper</tag>
       
     </tags>
     
