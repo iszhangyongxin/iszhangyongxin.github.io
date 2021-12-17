@@ -4,50 +4,11 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2021/12/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    <url>/2021/12/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/2021/12/18/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    <url>/2021/12/18/%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/2021/12/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    <url>/2021/12/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>【MAC】使用技巧</title>
     <link href="/2021/12/18/MAC%E4%BD%BF%E7%94%A8/"/>
     <url>/2021/12/18/MAC%E4%BD%BF%E7%94%A8/</url>
     
-    <content type="html"><![CDATA[<h1 id="1-开发"><a href="#1-开发" class="headerlink" title="1. 开发"></a>1. 开发</h1><ol><li>iTerm2，非常好用的控制台程序</li><li>oh my zsh</li><li>git</li></ol><h1 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h1><ol><li>微信</li><li>音乐播放软件-酷狗/网易云等</li><li>谷歌浏览器 - 油猴助手（太多好用插件了）</li></ol><h1 id="3-一些链接分享"><a href="#3-一些链接分享" class="headerlink" title="3. 一些链接分享"></a>3. 一些链接分享</h1><h2 id="3-1-我开了vpn了，git网页能进去，但是为什么我的git-push-或者-git-clone-都特别慢"><a href="#3-1-我开了vpn了，git网页能进去，但是为什么我的git-push-或者-git-clone-都特别慢" class="headerlink" title="3.1 我开了vpn了，git网页能进去，但是为什么我的git push 或者 git clone 都特别慢"></a>3.1 我开了vpn了，git网页能进去，但是为什么我的git push 或者 git clone 都特别慢</h2><blockquote><p>原因：没有设置代理,为什么慢是因为你没有使用你的vpn，还是原来的网络环境<br>解决方法： vim ~/.gitconfig  检查一下是否设置了你vpn的代理<br>然后设置代理 </p></blockquote><figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs tcl">设置代理方法即可解决(请自行查找你的vpn的<span class="hljs-keyword">http</span>代理端口)<br>git config --<span class="hljs-keyword">global</span> <span class="hljs-keyword">http</span>.proxy <span class="hljs-string">&quot;localhost:port&quot;</span><br></code></pre></td></tr></table></figure><p>怎么取消？</p><figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs tcl">git config --<span class="hljs-keyword">global</span> --<span class="hljs-keyword">unset</span> <span class="hljs-keyword">http</span>.proxy<br></code></pre></td></tr></table></figure><h2 id="3-2-git-push-每次都要我输入用户名和密码"><a href="#3-2-git-push-每次都要我输入用户名和密码" class="headerlink" title="3.2 git push 每次都要我输入用户名和密码"></a>3.2 git push 每次都要我输入用户名和密码</h2><p>输入命令 <code>git config --global credential.helper store</code></p><p>之后再操作git输入一次用户名、密码，后续不需要再次输入了</p><p>push你的代码 (git push), 这时会让你输入用户名和密码, 这一步输入的用户名密码会被记住,下次再push代码时就不用输入用户名密码 ! 这一步会在用户目录下生成文件.git-credential记录用户名密码的信息。</p><blockquote><p>参考 <a href="https://blog.csdn.net/Forcezs/article/details/84136902">https://blog.csdn.net/Forcezs/article/details/84136902</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="1-开发"><a href="#1-开发" class="headerlink" title="1. 开发"></a>1. 开发</h1><ol><li>iTerm2，非常好用的控制台程序</li><li>oh my zsh</li><li>git</li></ol><h1 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h1><ol><li>微信</li><li>音乐播放软件-酷狗/网易云等</li><li>谷歌浏览器 - 油猴助手（太多好用插件了）</li></ol><h1 id="3-一些链接分享"><a href="#3-一些链接分享" class="headerlink" title="3. 一些链接分享"></a>3. 一些链接分享</h1><h2 id="3-1-我开了vpn了，git网页能进去，但是为什么我的git-push-或者-git-clone-都特别慢"><a href="#3-1-我开了vpn了，git网页能进去，但是为什么我的git-push-或者-git-clone-都特别慢" class="headerlink" title="3.1 我开了vpn了，git网页能进去，但是为什么我的git push 或者 git clone 都特别慢"></a>3.1 我开了vpn了，git网页能进去，但是为什么我的git push 或者 git clone 都特别慢</h2><blockquote><p>原因：没有设置代理,为什么慢是因为你没有使用你的vpn，还是原来的网络环境<br>解决方法： vim ~/.gitconfig  检查一下是否设置了你vpn的代理<br>然后设置代理 </p></blockquote><figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs tcl">设置代理方法即可解决(请自行查找你的vpn的<span class="hljs-keyword">http</span>代理端口)<br>git config --<span class="hljs-keyword">global</span> <span class="hljs-keyword">http</span>.proxy <span class="hljs-string">&quot;localhost:port&quot;</span><br></code></pre></td></tr></table></figure><p>怎么取消？</p><figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs tcl">git config --<span class="hljs-keyword">global</span> --<span class="hljs-keyword">unset</span> <span class="hljs-keyword">http</span>.proxy<br></code></pre></td></tr></table></figure><blockquote><p>参考 <a href="https://www.jianshu.com/p/471aeba64724">https://www.jianshu.com/p/471aeba64724</a></p></blockquote><h2 id="3-2-git-push-每次都要我输入用户名和密码"><a href="#3-2-git-push-每次都要我输入用户名和密码" class="headerlink" title="3.2 git push 每次都要我输入用户名和密码"></a>3.2 git push 每次都要我输入用户名和密码</h2><p>输入命令 <code>git config --global credential.helper store</code></p><p>之后再操作git输入一次用户名、密码，后续不需要再次输入了</p><p>push你的代码 (git push), 这时会让你输入用户名和密码, 这一步输入的用户名密码会被记住,下次再push代码时就不用输入用户名密码 ! 这一步会在用户目录下生成文件.git-credential记录用户名密码的信息。</p><blockquote><p>参考 <a href="https://blog.csdn.net/Forcezs/article/details/84136902">https://blog.csdn.net/Forcezs/article/details/84136902</a></p></blockquote>]]></content>
     
     
     <categories>
@@ -89,6 +50,87 @@
       <tag>redis</tag>
       
       <tag>面试题目</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>【面试题目】---操作系统</title>
+    <link href="/2021/12/17/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <url>/2021/12/17/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>面试题目</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>面试题目</tag>
+      
+      <tag>操作系统</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>【面试题目】---计算机网络</title>
+    <link href="/2021/12/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <url>/2021/12/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>面试题目</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>面试题目</tag>
+      
+      <tag>计算机网络</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>【面试题目】---数据库</title>
+    <link href="/2021/12/17/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <url>/2021/12/17/%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>面试题目</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>面试题目</tag>
+      
+      <tag>数据库</tag>
       
     </tags>
     
