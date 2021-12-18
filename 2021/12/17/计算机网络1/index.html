@@ -26,7 +26,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210427151913200.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pvbmhf,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210427152225949.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pvbmhf,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2021-12-17T12:05:10.000Z">
-<meta property="article:modified_time" content="2021-12-18T18:40:20.436Z">
+<meta property="article:modified_time" content="2021-12-18T18:44:20.532Z">
 <meta property="article:author" content="Tom">
 <meta property="article:tag" content="面试题目">
 <meta property="article:tag" content="计算机网络">
@@ -360,8 +360,7 @@
 </li>
 </ol>
 <h3 id="1-2-2-四次挥手"><a href="#1-2-2-四次挥手" class="headerlink" title="1.2.2 四次挥手"></a>1.2.2 <strong>四次挥手</strong></h3><p><img src="https://img-blog.csdnimg.cn/20210427152225949.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pvbmhf,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></p>
-<p><strong>为什么挥手是四次？</strong></p>
-<blockquote>
+<h4 id="为什么挥手是四次？"><a href="#为什么挥手是四次？" class="headerlink" title="为什么挥手是四次？"></a><strong>为什么挥手是四次？</strong></h4><blockquote>
 <p>总结：挥手的目的是为了让双方都正确结束传送，并且要让对方知道自己已经结束传送。  </p>
 </blockquote>
 <ul>
@@ -370,8 +369,7 @@
 <li>第三次挥手，服务器正确结束传输，客户端知道服务器结束传输。  </li>
 <li>第四次挥手，服务器知道客户端知道了 自己已经结束传输了。  </li>
 </ul>
-<p><strong>为什么有TIME_WAIT 状态？</strong></p>
-<ul>
+<h4 id="为什么有TIME-WAIT-状态？"><a href="#为什么有TIME-WAIT-状态？" class="headerlink" title="为什么有TIME_WAIT 状态？"></a><strong>为什么有TIME_WAIT 状态？</strong></h4><ul>
 <li><p>为了保证客户端发送的最后一个ACK报文段能够到达服务器。  </p>
 </li>
 <li><p>因为这个ACK有可能丢失，从而导致处在LAST-ACK状态的服务器收不到对FIN-ACK的确认报文。服务器会<code>超时重传这个FIN-ACK</code>，接着客户端<code>再重传一次确认</code>，<code>重新启动时间等待计时器</code>。最后客户端和服务器都能正常的关闭。</p>
@@ -379,12 +377,10 @@
 <li><p>假设客户端不等待2MSL，而是在发送完ACK之后直接释放关闭，一但这个ACK丢失的话，服务器就无法正常的进入关闭连接状态。</p>
 </li>
 </ul>
-<p><strong>为什么有CLOSE_WAIT 状态？</strong></p>
-<ul>
+<h4 id="为什么有CLOSE-WAIT-状态？"><a href="#为什么有CLOSE-WAIT-状态？" class="headerlink" title="为什么有CLOSE_WAIT 状态？"></a><strong>为什么有CLOSE_WAIT 状态？</strong></h4><ul>
 <li>ClOSE_WAIT 是因为服务器收到客户端的结束连接报文以后，他并不能马上结束连接，要发送完手上的报文以后才能断开连接，所以在CLOSE_WAIT阶段发送它的报文。</li>
 </ul>
-<p><strong>半连接，SYN攻击，洪泛攻击</strong></p>
-<h2 id="1-3-TCP的可靠性"><a href="#1-3-TCP的可靠性" class="headerlink" title="1.3 TCP的可靠性"></a>1.3 TCP的可靠性</h2><h2 id="1-4-TCP沾包和拆包"><a href="#1-4-TCP沾包和拆包" class="headerlink" title="1.4 TCP沾包和拆包"></a>1.4 TCP沾包和拆包</h2><h1 id="二、HTTP与HTTPS"><a href="#二、HTTP与HTTPS" class="headerlink" title="二、HTTP与HTTPS"></a>二、HTTP与HTTPS</h1><h2 id="2-1-一次完整的HTTP请求是什么样的？"><a href="#2-1-一次完整的HTTP请求是什么样的？" class="headerlink" title="2.1 一次完整的HTTP请求是什么样的？"></a>2.1 一次完整的HTTP请求是什么样的？</h2><blockquote>
+<h4 id="半连接，SYN攻击，洪泛攻击"><a href="#半连接，SYN攻击，洪泛攻击" class="headerlink" title="半连接，SYN攻击，洪泛攻击"></a><strong>半连接，SYN攻击，洪泛攻击</strong></h4><h2 id="1-3-TCP的可靠性"><a href="#1-3-TCP的可靠性" class="headerlink" title="1.3 TCP的可靠性"></a>1.3 TCP的可靠性</h2><h2 id="1-4-TCP沾包和拆包"><a href="#1-4-TCP沾包和拆包" class="headerlink" title="1.4 TCP沾包和拆包"></a>1.4 TCP沾包和拆包</h2><h1 id="二、HTTP与HTTPS"><a href="#二、HTTP与HTTPS" class="headerlink" title="二、HTTP与HTTPS"></a>二、HTTP与HTTPS</h1><h2 id="2-1-一次完整的HTTP请求是什么样的？"><a href="#2-1-一次完整的HTTP请求是什么样的？" class="headerlink" title="2.1 一次完整的HTTP请求是什么样的？"></a>2.1 一次完整的HTTP请求是什么样的？</h2><blockquote>
 <p>建议以一个完整的HTTP请求为流程去把很多东西串联起来</p>
 </blockquote>
 <ol>
