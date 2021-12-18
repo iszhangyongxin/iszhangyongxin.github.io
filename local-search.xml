@@ -58,11 +58,11 @@
   
   
   <entry>
-    <title>【面试题目】---数据库</title>
-    <link href="/2021/12/17/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    <url>/2021/12/17/%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <title>【面试题目】---计算机网络</title>
+    <link href="/2021/12/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/"/>
+    <url>/2021/12/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/</url>
     
-    <content type="html"><![CDATA[<h1 id="一、事务"><a href="#一、事务" class="headerlink" title="一、事务"></a>一、事务</h1><h1 id="二、索引"><a href="#二、索引" class="headerlink" title="二、索引"></a>二、索引</h1><h2 id="2-1-MYSQL的存储引擎？"><a href="#2-1-MYSQL的存储引擎？" class="headerlink" title="2.1 MYSQL的存储引擎？"></a>2.1 MYSQL的存储引擎？</h2><h2 id="2-2-什么是索引？常见的索引？优缺点？"><a href="#2-2-什么是索引？常见的索引？优缺点？" class="headerlink" title="2.2 什么是索引？常见的索引？优缺点？"></a>2.2 什么是索引？常见的索引？优缺点？</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、TCP与UDP"><a href="#一、TCP与UDP" class="headerlink" title="一、TCP与UDP"></a>一、TCP与UDP</h1><h2 id="1-1-TCP与UDP的区别？🔥🔥🔥"><a href="#1-1-TCP与UDP的区别？🔥🔥🔥" class="headerlink" title="1.1 TCP与UDP的区别？🔥🔥🔥"></a>1.1 TCP与UDP的区别？🔥🔥🔥</h2><blockquote><p>总结：面向连接、可靠、一对一、传输对象、传输效率</p></blockquote><ol><li><p>TCP面向连接;UDP是无连接的。</p></li><li><p>TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达;UDP尽最大努力交付，即不保证可靠交付。</p></li><li><p>TCP面向字节流，UDP是面向报文的。</p></li><li><p>每一条TCP连接只能是点到点的;UDP支持一对一，一对多，多对一和多对多的交互通信。</p></li><li><p>TCP首部开销20字节;UDP的首部开销小，只有8个字节。</p></li><li><p>UDP效率比TCP效率高，因为不需要三次握手，四次挥手。</p></li></ol><p><strong>各自的应用场景/协议？</strong></p><table><thead><tr><th>协议</th><th>名称</th><th>默认端口</th><th>底层协议</th></tr></thead><tbody><tr><td>HTTP</td><td>超文本传输协议</td><td>80</td><td>TCP</td></tr><tr><td>HTTPS</td><td>超文本传输安全协议</td><td>443</td><td>TCP</td></tr><tr><td>Telnet</td><td>远程登录服务的标准协议</td><td>23</td><td>TCP</td></tr><tr><td>FTP</td><td>文件传输协议</td><td>20传输和21连接</td><td>TCP</td></tr><tr><td>TFTP</td><td>简单文件传输协议</td><td>69</td><td>UDP</td></tr><tr><td>SMTP</td><td>简单邮件传输协议（发送用）</td><td>25</td><td>TCP</td></tr><tr><td>POP</td><td>邮局协议（接收用）</td><td>110</td><td>TCP</td></tr><tr><td>DNS</td><td>域名解析服务</td><td>53</td><td>服务器间进行域传输的时候用TCP<br />客户端查询DNS服务器时用 UDP</td></tr></tbody></table><h2 id="1-2-三次握手和四次挥手-🔥🔥🔥"><a href="#1-2-三次握手和四次挥手-🔥🔥🔥" class="headerlink" title="1.2 三次握手和四次挥手 🔥🔥🔥"></a>1.2 三次握手和四次挥手 🔥🔥🔥</h2><h3 id="1-2-1-三次握手"><a href="#1-2-1-三次握手" class="headerlink" title="1.2.1 三次握手"></a>1.2.1 <strong>三次握手</strong></h3><p><img src="https://img-blog.csdnimg.cn/20210427151913200.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pvbmhf,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p><strong>为什么握手是三次，两次行不行，四次行不行</strong></p><blockquote><p>总结：三次握手是为了让双方都知道对方的发送和接受能力是正常的。<br>然后两次不行，因为之前结束的请求可能再次出现，四次又太浪费了，没必要。</p></blockquote><ul><li>第一次握手：服务器知道客户端发送能力正常。</li><li>第二次握手：客户端知道服务器 <code>接收能力</code>｜<code>发送能力</code> 都正常。 </li><li>第三次握手：服务器知道客户端 <code>接收能力</code>｜<code>发送能力</code> 都正常。  </li></ul><p>试想如果是用两次握手，则会出现下面这种情况：</p><ol><li><p>如客户端发出连接请求，但因连接请求报文丢失而未收到确认，于是客户端再重传一次连接请求。后来收到了确认，建立了连接。数据传输完毕后，就释放了连接，客户端共发出了两个连接请求报文段，其中第一个丢失，第二个到达了服务端。</p></li><li><p>但是第一个丢失的报文段只是在<strong>某些网络结点长时间滞留了，延误到连接释放以后的某个时间才到达服务端</strong>，此时服务端误认为客户端又发出一次新的连接请求，于是就向客户端发出确认报文段，同意建立连接，不采用三次握手，只要服务端发出确认，就建立新的连接了，此时客户端忽略服务端发来的确认，也不发送数据，则服务端一致等待客户端发送数据，浪费资源。</p></li></ol><h3 id="1-2-2-四次挥手"><a href="#1-2-2-四次挥手" class="headerlink" title="1.2.2 四次挥手"></a>1.2.2 <strong>四次挥手</strong></h3><p><img src="https://img-blog.csdnimg.cn/20210427152225949.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pvbmhf,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p><strong>为什么挥手是四次？</strong></p><blockquote><p>总结：挥手的目的是为了让双方都正确结束传送，并且要让对方知道自己已经结束传送。  </p></blockquote><ul><li>第一次挥手，客户端正确结束传输。 </li><li>第二次挥手，服务器知道客户端结束传输，客户端知道了对方已经知道自己结束了传输。</li><li>第三次挥手，服务器正确结束传输，客户端知道服务器结束传输。  </li><li>第四次挥手，服务器知道客户端知道了 自己已经结束传输了。  </li></ul><p><strong>为什么有TIME_WAIT 状态？</strong></p><ul><li><p>为了保证客户端发送的最后一个ACK报文段能够到达服务器。  </p></li><li><p>因为这个ACK有可能丢失，从而导致处在LAST-ACK状态的服务器收不到对FIN-ACK的确认报文。服务器会<code>超时重传这个FIN-ACK</code>，接着客户端<code>再重传一次确认</code>，<code>重新启动时间等待计时器</code>。最后客户端和服务器都能正常的关闭。</p></li><li><p>假设客户端不等待2MSL，而是在发送完ACK之后直接释放关闭，一但这个ACK丢失的话，服务器就无法正常的进入关闭连接状态。</p></li></ul><p><strong>为什么有CLOSE_WAIT 状态？</strong></p><ul><li>ClOSE_WAIT 是因为服务器收到客户端的结束连接报文以后，他并不能马上结束连接，要发送完手上的报文以后才能断开连接，所以在CLOSE_WAIT阶段发送它的报文。</li></ul><p><strong>半连接，SYN攻击，洪泛攻击</strong></p><h2 id="1-3-TCP的可靠性"><a href="#1-3-TCP的可靠性" class="headerlink" title="1.3 TCP的可靠性"></a>1.3 TCP的可靠性</h2><h2 id="1-4-TCP沾包和拆包"><a href="#1-4-TCP沾包和拆包" class="headerlink" title="1.4 TCP沾包和拆包"></a>1.4 TCP沾包和拆包</h2><h1 id="二、HTTP与HTTPS"><a href="#二、HTTP与HTTPS" class="headerlink" title="二、HTTP与HTTPS"></a>二、HTTP与HTTPS</h1><h2 id="2-1-一次完整的HTTP请求是什么样的？"><a href="#2-1-一次完整的HTTP请求是什么样的？" class="headerlink" title="2.1 一次完整的HTTP请求是什么样的？"></a>2.1 一次完整的HTTP请求是什么样的？</h2><blockquote><p>建议以一个完整的HTTP请求为流程去把很多东西串联起来</p></blockquote><ol><li>域名解析 </li><li>发起TCP的3次握手 </li><li>建立TCP连接后发起http请求 </li><li>服务器响应http请求，浏览器得到html代码 </li><li>浏览器解析html代码，并请求html代码中的资源（如js、css、图片等） </li><li>浏览器对页面进行渲染呈现给用户。</li></ol><h2 id="2-2-DNS域名解析"><a href="#2-2-DNS域名解析" class="headerlink" title="2.2 DNS域名解析"></a>2.2 DNS域名解析</h2><h3 id="2-2-1-什么是域名解析？"><a href="#2-2-1-什么是域名解析？" class="headerlink" title="2.2.1 什么是域名解析？"></a>2.2.1 什么是域名解析？</h3><p><strong>官方解释</strong>：DNS（Domain Name System，域名系统），因特网上作为<strong>域名和IP地址相互映射</strong>的一个<strong>分布式数据库</strong>，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。</p><p>通过主机名，最终得到该主机名对应的IP地址的过程叫做域名解析（或主机名解析）。</p><p><strong>通俗的讲</strong>，我们更习惯于记住一个网站的名字，比如<a href="http://www.baidu.com,而不是记住它的ip地址，比如：167.23.102.21。">www.baidu.com,而不是记住它的ip地址，比如：167.23.102.21。</a></p><h3 id="2-2-2-域名解析过程？"><a href="#2-2-2-域名解析过程？" class="headerlink" title="2.2.2 域名解析过程？"></a>2.2.2 域名解析过程？</h3><ol><li>请求一旦发起，若是chrome浏览器，先在浏览器找之前<strong>有没有缓存过的域名所对应的ip地址</strong>，有的话，直接跳过dns解析了，若是没有，就会<strong>找硬盘的hosts文件</strong>，看看有没有，有的话，直接找到hosts文件里面的ip</li><li>如果本地的hosts文件没有能得到对应的ip地址，浏览器会发出一个<strong>dns请求到本地dns服务器</strong>，<strong>本地dns服务器一般都是你的网络接入服务器商提供</strong>，比如中国电信，中国移动等。</li><li>查询你输入的网址的DNS请求到达本地DNS服务器之后，<strong>本地DNS服务器会首先查询它的缓存记录</strong>，如果缓存中有此条记录，就可以直接返回结果，此过程是<strong>递归的方式进行查询</strong>。如果没有，本地DNS服务器还要向<strong>DNS根服务器</strong>进行查询。</li><li>本地DNS服务器继续向域服务器发出请求，在这个例子中，请求的对象是.com域服务器。.com域服务器收到请求之后，也不会直接返回域名和IP地址的对应关系，而是告诉本地DNS服务器，你的域名的解析服务器的地址。</li><li>最后，本地DNS服务器向<strong>域名的解析服务器</strong>发出请求，这时就能收到一个域名和IP地址对应关系，本地DNS服务器不仅要把IP地址返回给用户电脑，还要把这个对应关系保存在缓存中，以备下次别的用户查询时，可以直接返回结果，加快网络访问。</li></ol><blockquote><p>总结： 浏览器缓存，系统缓存（host文件），路由器缓存，IPS服务器缓存，根域名服务器缓存，顶级域名服务器缓存，主域名服务器缓存。<br>本地查询：递归查询<br>全局查询：迭代查询，如果都是递归查询，那服务器的压力就太大了。</p></blockquote><h3 id="2-2-3-为什么域名解析用UDP协议？"><a href="#2-2-3-为什么域名解析用UDP协议？" class="headerlink" title="2.2.3 为什么域名解析用UDP协议？"></a>2.2.3 为什么域名解析用UDP协议？</h3><p>因为UDP比较快！UDP的DNS协议只要一个请求、一个应答就好了。</p><p>而使用基于TCP的DNS协议要三次握手、发送数据以及应答、四次挥手，但是UDP协议传输内容不能超过512字节。</p><p>不过客户端向DNS服务器查询域名，一般返回的内容都不超过512字节，用UDP传输即可。</p><h3 id="2-2-4-为什么区域传送用TCP协议？"><a href="#2-2-4-为什么区域传送用TCP协议？" class="headerlink" title="2.2.4 为什么区域传送用TCP协议？"></a>2.2.4 为什么区域传送用TCP协议？</h3><p>因为TCP协议可靠性好啊！</p><p>你要从主DNS上复制内容啊，你用不可靠的UDP？ 因为TCP协议传输的内容大啊，你用最大只能传512字节的UDP协议？万一同步的数据大于512字节，你怎么办？所以用TCP协议比较好！</p><h3 id="2-2-5-DNS负载均衡"><a href="#2-2-5-DNS负载均衡" class="headerlink" title="2.2.5 DNS负载均衡"></a>2.2.5 DNS负载均衡</h3><p>当一个网站有足够多的用户的时候，假如每次请求的资源都位于同一台机器上面，那么这台机器随时可能会崩掉。处理办法就是用DNS负载均衡技术，它的原理是在<strong>DNS服务器中为同一个主机名配置多个IP地址,在应答DNS查询时,DNS服务器对每个查询将以DNS文件中主机记录的IP地址按顺序返回不同的解析结果,将客户端的访问引导到不同的机器上去,使得不同的客户端访问不同的服务器</strong>,从而达到负载均衡的目的｡例如可以根据每台机器的负载量，该机器离用户地理位置的距离等等。</p><h1 id="二、网络的五层-七层模型？"><a href="#二、网络的五层-七层模型？" class="headerlink" title="二、网络的五层/七层模型？"></a>二、网络的五层/七层模型？</h1>]]></content>
     
     
     <categories>
@@ -76,7 +76,7 @@
       
       <tag>面试题目</tag>
       
-      <tag>数据库</tag>
+      <tag>计算机网络</tag>
       
     </tags>
     
@@ -112,11 +112,11 @@
   
   
   <entry>
-    <title>【面试题目】---计算机网络</title>
-    <link href="/2021/12/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    <url>/2021/12/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
+    <title>【面试题目】---数据库</title>
+    <link href="/2021/12/17/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <url>/2021/12/17/%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
     
-    <content type="html"><![CDATA[<h1 id="一、从你输入www-baidu-com以后，一个完整的网络请求过程是什么？"><a href="#一、从你输入www-baidu-com以后，一个完整的网络请求过程是什么？" class="headerlink" title="一、从你输入www.baidu.com以后，一个完整的网络请求过程是什么？"></a>一、从你输入<a href="http://www.baidu.com以后，一个完整的网络请求过程是什么？">www.baidu.com以后，一个完整的网络请求过程是什么？</a></h1><ol><li>域名解析 DNS解析</li><li>TCP三次握手</li><li>TCP四次挥手</li><li>浏览器渲染 </li></ol><h1 id="二、网络的五层-七层模型？"><a href="#二、网络的五层-七层模型？" class="headerlink" title="二、网络的五层/七层模型？"></a>二、网络的五层/七层模型？</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、事务"><a href="#一、事务" class="headerlink" title="一、事务"></a>一、事务</h1><h1 id="二、索引"><a href="#二、索引" class="headerlink" title="二、索引"></a>二、索引</h1><h2 id="2-1-MYSQL的存储引擎？"><a href="#2-1-MYSQL的存储引擎？" class="headerlink" title="2.1 MYSQL的存储引擎？"></a>2.1 MYSQL的存储引擎？</h2><h2 id="2-2-什么是索引？常见的索引？优缺点？"><a href="#2-2-什么是索引？常见的索引？优缺点？" class="headerlink" title="2.2 什么是索引？常见的索引？优缺点？"></a>2.2 什么是索引？常见的索引？优缺点？</h2>]]></content>
     
     
     <categories>
@@ -130,7 +130,7 @@
       
       <tag>面试题目</tag>
       
-      <tag>计算机网络</tag>
+      <tag>数据库</tag>
       
     </tags>
     
