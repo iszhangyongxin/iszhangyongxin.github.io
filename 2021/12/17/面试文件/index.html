@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/img_convert/ece9c1a3c7afee84d1fab445179faa63.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/img_convert/9ae2d6fb0ec7b2fb87a7c428e266acad.png">
 <meta property="article:published_time" content="2021-12-17T12:05:10.000Z">
-<meta property="article:modified_time" content="2021-12-27T17:29:32.726Z">
+<meta property="article:modified_time" content="2021-12-27T18:01:37.797Z">
 <meta property="article:author" content="Tom">
 <meta property="article:tag" content="汇总">
 <meta property="article:tag" content="面试">
@@ -219,7 +219,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      4.7k 字
+      4.9k 字
     </span>
   
 
@@ -454,29 +454,39 @@
 <h3 id="2-2-4-为什么区域传送用TCP协议？"><a href="#2-2-4-为什么区域传送用TCP协议？" class="headerlink" title="2.2.4 为什么区域传送用TCP协议？"></a>2.2.4 为什么区域传送用TCP协议？</h3><p>因为TCP协议可靠性好啊！</p>
 <p>你要从主DNS上复制内容啊，你用不可靠的UDP？ 因为TCP协议传输的内容大啊，你用最大只能传512字节的UDP协议？万一同步的数据大于512字节，你怎么办？所以用TCP协议比较好！</p>
 <h3 id="2-2-5-DNS负载均衡"><a href="#2-2-5-DNS负载均衡" class="headerlink" title="2.2.5 DNS负载均衡"></a>2.2.5 DNS负载均衡</h3><p>当一个网站有足够多的用户的时候，假如每次请求的资源都位于同一台机器上面，那么这台机器随时可能会崩掉。处理办法就是用DNS负载均衡技术，它的原理是在<strong>DNS服务器中为同一个主机名配置多个IP地址,在应答DNS查询时,DNS服务器对每个查询将以DNS文件中主机记录的IP地址按顺序返回不同的解析结果,将客户端的访问引导到不同的机器上去,使得不同的客户端访问不同的服务器</strong>,从而达到负载均衡的目的｡例如可以根据每台机器的负载量，该机器离用户地理位置的距离等等。</p>
-<h1 id="三、网络的五层-七层模型？"><a href="#三、网络的五层-七层模型？" class="headerlink" title="三、网络的五层/七层模型？"></a>三、网络的五层/七层模型？</h1><h1 id="💻-操作系统"><a href="#💻-操作系统" class="headerlink" title="💻    操作系统"></a>💻    操作系统</h1><h1 id="💰-数据库"><a href="#💰-数据库" class="headerlink" title="💰    数据库"></a>💰    数据库</h1><h1 id="一、存储引擎"><a href="#一、存储引擎" class="headerlink" title="一、存储引擎"></a>一、存储引擎</h1><h2 id="1-1-有哪些存储引擎，innodb和myisam的区别？"><a href="#1-1-有哪些存储引擎，innodb和myisam的区别？" class="headerlink" title="1.1 有哪些存储引擎，innodb和myisam的区别？"></a>1.1 有哪些存储引擎，innodb和myisam的区别？</h2><ol>
+<h1 id="三、网络的五层-七层模型？"><a href="#三、网络的五层-七层模型？" class="headerlink" title="三、网络的五层/七层模型？"></a>三、网络的五层/七层模型？</h1><h1 id="💻-操作系统"><a href="#💻-操作系统" class="headerlink" title="💻    操作系统"></a>💻    操作系统</h1><h1 id="💰-数据库"><a href="#💰-数据库" class="headerlink" title="💰    数据库"></a>💰    数据库</h1><h1 id="一、-索引"><a href="#一、-索引" class="headerlink" title="一、 索引"></a>一、 索引</h1><h2 id="1-1-有哪些存储引擎，innodb和myisam的区别？"><a href="#1-1-有哪些存储引擎，innodb和myisam的区别？" class="headerlink" title="1.1 有哪些存储引擎，innodb和myisam的区别？"></a>1.1 有哪些存储引擎，innodb和myisam的区别？</h2><ol>
 <li>innodb支持事务、外键，myisam不支持事务、外键。</li>
 <li>InnoDB支持行锁，myisam支持表锁，每次更新增加删除都会锁住表。</li>
 <li>innoDB是聚集索引，myisam是非聚集索引，索引和数据是分开的，需要一个<strong>回表</strong>操作。</li>
 </ol>
-<h1 id="二、-索引"><a href="#二、-索引" class="headerlink" title="二、 索引"></a>二、 索引</h1><h2 id="2-1-什么是索引？"><a href="#2-1-什么是索引？" class="headerlink" title="2.1 什么是索引？"></a>2.1 什么是索引？</h2><p><strong>索引</strong>是一种加快数据搜索的数据结构。</p>
-<h2 id="2-2-索引的存储结构有哪些？"><a href="#2-2-索引的存储结构有哪些？" class="headerlink" title="2.2 索引的存储结构有哪些？"></a>2.2 索引的存储结构有哪些？</h2><ol>
+<h2 id="1-2-什么是索引？"><a href="#1-2-什么是索引？" class="headerlink" title="1.2 什么是索引？"></a>1.2 什么是索引？</h2><p><strong>索引</strong>是一种加快数据搜索的数据结构。</p>
+<h2 id="1-3-索引的存储结构有哪些？"><a href="#1-3-索引的存储结构有哪些？" class="headerlink" title="1.3 索引的存储结构有哪些？"></a>1.3 索引的存储结构有哪些？</h2><ol>
 <li>hash表</li>
 <li>B-树  </li>
 <li>B+树</li>
 </ol>
-<h2 id="2-3-B树和B-树的区别？"><a href="#2-3-B树和B-树的区别？" class="headerlink" title="2.3 B树和B+树的区别？"></a>2.3 B树和B+树的区别？</h2><ol>
+<h2 id="1-4-B树和B-树的区别？"><a href="#1-4-B树和B-树的区别？" class="headerlink" title="1.4 B树和B+树的区别？"></a>1.4 B树和B+树的区别？</h2><ol>
 <li>B+ 树非叶子节点上是不存储数据的，仅存储键值，而 B 树节点中不仅存储键值，也会存储数据。<br>之所以这么做是因为在数据库中页的大小是固定的，<strong>InnoDB 中页的默认大小是 16KB。<br>3层可以存10亿个数据</strong>。</li>
 <li>B+树的所有叶节点都会有一个<strong>双向链表</strong>，方便于实现范围查找。</li>
 </ol>
 <p><img src="https://img-blog.csdnimg.cn/img_convert/ece9c1a3c7afee84d1fab445179faa63.png" srcset="/img/loading.gif" lazyload alt="B树的结构"></p>
 <p><img src="https://img-blog.csdnimg.cn/img_convert/9ae2d6fb0ec7b2fb87a7c428e266acad.png" srcset="/img/loading.gif" lazyload alt="B+树的结构"></p>
-<h2 id="B-树和hash表的区别？"><a href="#B-树和hash表的区别？" class="headerlink" title="B+树和hash表的区别？"></a>B+树和hash表的区别？</h2><ol>
+<h2 id="1-5-B-树和hash表的区别？"><a href="#1-5-B-树和hash表的区别？" class="headerlink" title="1.5 B+树和hash表的区别？"></a>1.5 B+树和hash表的区别？</h2><ol>
 <li>hash表进行一次计算就能得到数据，很多时候比B+树高效。</li>
 <li>hash表仅仅支持“=”、“IN”，不支持范围查找。</li>
 <li>hash表存在hash冲突的问题。</li>
 </ol>
-<h1 id="二、事务"><a href="#二、事务" class="headerlink" title="二、事务"></a>二、事务</h1><h1 id="📚-Redis"><a href="#📚-Redis" class="headerlink" title="📚    Redis"></a>📚    Redis</h1>
+<h2 id="1-6-索引失效的情况？"><a href="#1-6-索引失效的情况？" class="headerlink" title="1.6 索引失效的情况？"></a>1.6 索引失效的情况？</h2><p>口诀：【模型数空运最快】</p>
+<ul>
+<li>模：模糊查询，使用like关键字，以%号开头就失效。</li>
+<li>型：数据类型错误也会失效。</li>
+<li>数：使用内部函数也会失效，建立基于函数的索引。</li>
+<li>空：索引不存储空值。</li>
+<li>运：对索引列进行+-*/会失效。</li>
+<li>最：最左匹配原则，如果不是按照索引列最左列进行查找，那么索引也会失效。</li>
+<li>快：如果全表扫描比索引更快，那么将不会使用索引。</li>
+</ul>
+<h2 id="1-7-主键索引、聚集索引、非聚集索引"><a href="#1-7-主键索引、聚集索引、非聚集索引" class="headerlink" title="1.7 主键索引、聚集索引、非聚集索引"></a>1.7 主键索引、聚集索引、非聚集索引</h2><h1 id="二、事务"><a href="#二、事务" class="headerlink" title="二、事务"></a>二、事务</h1><h1 id="📚-Redis"><a href="#📚-Redis" class="headerlink" title="📚    Redis"></a>📚    Redis</h1>
             </div>
             <hr>
             <div>
